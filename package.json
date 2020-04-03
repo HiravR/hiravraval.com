@@ -1,0 +1,27 @@
+{
+  "name": "hiravraval.com",
+  "version": "1.0.0",
+  "description": "Code of hiravraval.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "postinstall": "npm run build",
+  "start": "node server.js",
+  "keywords": [
+    "hiravraval",
+    "hiravraval.com"
+  ],
+  "author": "Hirav Raval",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}
