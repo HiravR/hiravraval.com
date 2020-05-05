@@ -4,7 +4,8 @@
   "description": "Code of hiravraval.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon  server.js"
   },
   "postinstall": "npm run build",
   "start": "node server.js",
@@ -15,13 +16,23 @@
   "author": "Hirav Raval",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
-    "gulp-uglifycss": "^1.1.0"
+    "gulp-uglifycss": "^1.1.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2"
   }
 }

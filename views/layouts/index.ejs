@@ -1,63 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hirav Raval Resume</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./compiled/css/style.css">
-	<link rel="canonical" href="http://www.hiravraval.com">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117806712-1"></script>
-	<script>
-		var host = window.location.hostname;
-		if(host !== 'localhost')
-		{
-			window.dataLayer = window.dataLayer || [];
-		  	function gtag(){dataLayer.push(arguments);}
-		  	gtag('js', new Date());
-			gtag('config', 'UA-117806712-1');
-		}
-	</script>
-
-</head>
-<body>
-	<!-- Header Section Start-->
-	<header>
+<%- include(`../components/header`)%>
+	
 	  <!-- Fixed navbar -->
-	  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-	  	<div class="container">
-	    <a class="navbar-brand" href="#">Hirav Raval</a>
-	    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-	      <ul class="navbar-nav mr-auto">
-	        <li class="nav-item active">
-	          <a class="nav-link" href="https://hiravraval.herokuapp.com/">Home <span class="sr-only">(current)</span></a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="./documents/resume/Hirav_Raval_Resume.docx">Download Resume</a>
-	        </li>
-	        <!--
-	        <li class="nav-item">
-	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	        </li>-->
-	        <li class="nav-item dropdown ">
-	        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Profile Links</a>
-	        <div class="dropdown-menu " aria-labelledby="dropdown04">
-	          <a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/hiravraval/">LinkedIn</a>
-	          <a class="dropdown-item" target="_blank" href="https://www.github.com/HiravR">GitHub</a>
-	        </div>
-	      </li>
-	      </ul>
-	      <!--<form class="form-inline mt-2 mt-md-0">
-	        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-	        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	      </form>-->
-	    </div>
-	  </div>
-	  </nav>  
-	</header>
+	<%- include(`../components/navigation`)%>
+	
 	<!-- Header Section End-->
 	<!-- Main Section Start-->
 	<main role="main" class="flex-shrink-0">
@@ -213,27 +158,5 @@
 	</main>
 	<!-- Main Section End-->
 	<!-- Footer Section Start-->
-	<footer class="footer mt-auto py-3">
-		<div class="container">		
-		    <ul class="nav navbar navbar-left d-flex d-inline-flex">
-		    	<li class="nav-item d-inline-flex  align-items-center mr-2">
-		    		<span class="text-muted"> Copyright &copy; 2020</span>  	
-		    	</li>
-		      <li class="nav-item d-inline-flex  align-items-center mr-2">
-		        <a class="nav-link d-inline-flex" href="https://hiravraval.herokuapp.com/">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item d-inline-flex  align-items-center mr-2">
-		        <a class="nav-link d-inline-flex" target="_blank" href="https://www.linkedin.com/in/hiravraval/" >LinkedIn</a>
-		      </li>
-		      <li class="nav-item d-inline-flex  align-items-center mr-2">
-		        <a class="nav-link d-inline-flex" target="_blank" href="https://www.github.com/HiravR" >GitHub</a>
-		      </li>
-		    </ul>
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<!-- Footer Section End-->
-</body>
-</html>
+	<%- include(`../components/footer`) %>
+	
